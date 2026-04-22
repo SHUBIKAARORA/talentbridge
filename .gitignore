@@ -1,0 +1,76 @@
+# ======================
+# GENERAL
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# NODE / REACT
+# ======================
+node_modules/
+build/
+dist/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======================
+# SPRING BOOT / JAVA
+# ======================
+target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ======================
+# PYTHON
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# virtual envs
+venv/
+env/
+.venv/
+
+# Python logs
+*.log
+
+firebase-service-account.json
+
+# ======================
+# DATABASE / CONFIG
+# ======================
+application.properties
+application.yml
+
+# (Optional: only ignore if they contain secrets)
+# Otherwise you can commit a sanitized version
+
+# ======================
+# OS / TEMP FILES
+# ======================
+*.swp
+*.swo
+*~
