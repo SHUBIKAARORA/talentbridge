@@ -1,0 +1,372 @@
+/* Page shell */
+.auth-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Left panel (navy) ── */
+.auth-lhs {
+  width: 45%;
+  background: #0F172A;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle glow accent in top-right corner */
+.auth-lhs::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Logo */
+.auth-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #6366F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-logo-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.auth-logo-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.auth-logo-text span {
+  color: #38BDF8;
+}
+
+/* LHS body */
+.auth-lhs-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Season tag pill */
+.auth-season-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 0.5px solid rgba(99, 102, 241, 0.35);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  color: #A5B4FC;
+  width: fit-content;
+}
+
+.auth-season-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6366F1;
+  display: inline-block;
+}
+
+/* Headline */
+.auth-headline {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.35;
+}
+
+.auth-headline span {
+  color: #38BDF8;
+}
+
+.auth-lhs-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.65;
+}
+
+/* Feature list */
+.auth-feats {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 0.25rem;
+}
+
+.auth-feat {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.auth-feat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.auth-feat-icon--indigo { background: rgba(99, 102, 241, 0.15); }
+.auth-feat-icon--sky    { background: rgba(56, 189, 248, 0.12); }
+.auth-feat-icon--emerald{ background: rgba(16, 185, 129, 0.12); }
+
+.auth-feat-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.auth-feat-sub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1.5;
+}
+
+/* Stats row */
+.auth-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.auth-stat-val {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.auth-stat-lbl {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 2px;
+}
+
+/* ── Right panel (white) ── */
+.auth-rhs {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.auth-form-wrap {
+  width: 100%;
+  max-width: 360px;
+}
+
+.auth-form-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0F172A;
+  margin-bottom: 4px;
+}
+
+.auth-form-sub {
+  font-size: 13px;
+  color: #64748B;
+  margin-bottom: 1.75rem;
+}
+
+/* Error */
+.auth-error {
+  font-size: 13px;
+  color: #DC2626;
+  background: #FEF2F2;
+  border: 0.5px solid #FECACA;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+}
+
+/* Fields */
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 14px;
+}
+
+.auth-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0.5px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #0F172A;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.auth-input::placeholder {
+  color: #94A3B8;
+}
+
+.auth-input:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* Submit button */
+.auth-submit {
+  width: 100%;
+  background: #6366F1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.auth-submit:hover {
+  background: #4F46E5;
+}
+
+.auth-submit:active {
+  transform: scale(0.99);
+}
+
+.auth-submit:disabled {
+  background: #A5B4FC;
+  cursor: not-allowed;
+}
+
+/* Footer link */
+.auth-footer {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 13px;
+  color: #64748B;
+}
+
+.auth-footer a {
+  color: #6366F1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ── Register page — same two-panel shell ── */
+/* The register form is taller so we allow scroll on RHS */
+.auth-rhs--scroll {
+  align-items: flex-start;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow-y: auto;
+}
+
+/* Role selector */
+.auth-role-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.auth-role-tab {
+  flex: 1;
+  min-width: 70px;
+  padding: 7px 10px;
+  border: 0.5px solid #CBD5E1;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748B;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.auth-role-tab:hover {
+  border-color: #6366F1;
+  color: #6366F1;
+}
+
+.auth-role-tab.active {
+  background: #EEF2FF;
+  border-color: #6366F1;
+  color: #4F46E5;
+}
+
+/* Section divider inside form */
+.auth-section-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+  margin: 1rem 0 0.75rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .auth-page {
+    flex-direction: column;
+  }
+
+  .auth-lhs {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+
+  .auth-lhs-body {
+    margin: 1.5rem 0;
+  }
+
+  .auth-feats {
+    display: none;
+  }
+
+  .auth-rhs {
+    padding: 2rem 1.5rem;
+    align-items: flex-start;
+  }
+
+  .auth-form-wrap {
+    max-width: 100%;
+  }
+}

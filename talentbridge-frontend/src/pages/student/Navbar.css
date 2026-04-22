@@ -1,0 +1,56 @@
+/* TalentBridge Navbar — matches navy theme */
+
+.navbar {
+  height: 52px;
+  background: #0F172A;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bell-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.bell-container:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bell-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background: #EF4444;
+  border-radius: 50%;
+  border: 1.5px solid #0F172A;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: 1;   }
+  50%  { transform: scale(1.4); opacity: 0.6; }
+  100% { transform: scale(1);   opacity: 1;   }
+}

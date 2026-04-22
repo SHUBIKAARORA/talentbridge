@@ -1,0 +1,72 @@
+/* TalentBridge — Notification Dropdown */
+
+.nd-dropdown {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  width: 320px;
+  background: #fff;
+  border: 0.5px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.nd-header {
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94A3B8;
+  border-bottom: 0.5px solid #F1F5F9;
+}
+
+.nd-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 0.5px solid #F8FAFC;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.nd-item:last-child { border-bottom: none; }
+
+.nd-item:hover { background: #F8FAFC; }
+
+.nd-item--unread { background: #F5F7FF; }
+.nd-item--unread:hover { background: #EEF2FF; }
+
+.nd-item-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6366F1;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.nd-item-body { flex: 1; }
+
+.nd-message {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #0F172A;
+  line-height: 1.5;
+}
+
+.nd-time {
+  font-size: 11px;
+  color: #94A3B8;
+}
+
+.nd-empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 13px;
+  color: #94A3B8;
+}

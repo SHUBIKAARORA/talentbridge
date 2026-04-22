@@ -1,0 +1,30 @@
+:root{
+  --sidebar-purple: #6D5BD0;
+  --sidebar-dark: #5A4BC4;
+  --primary-purple: #7C6EE6;
+  --lavender: #C4B5FD;
+
+  --background: #F5F6FA;
+  --card-bg: #FFFFFF;
+  --text-dark: #1F2937;
+}
+
+body{
+  margin:0;
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+  color: var(--text-dark);
+}
+
+.primary-btn{
+  background: var(--primary-purple);
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.primary-btn:hover{
+  background: var(--sidebar-purple);
+}

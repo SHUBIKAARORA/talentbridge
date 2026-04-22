@@ -1,0 +1,16 @@
+.dashboard-container{
+   display:flex;
+  min-height:100vh;
+  background:#F5F6FA;
+}
+
+.dashboard-content{
+   flex:1;
+  padding:30px;
+  margin-left:240px;
+  overflow-y:auto;
+}
+
+.dashboard-section{
+  max-width:1000px;
+}

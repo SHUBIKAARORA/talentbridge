@@ -1,0 +1,23 @@
+.experience-container {
+  padding: 10px;
+}
+
+.experience-card {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-top {
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+.experience-bottom {
+  margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+.applications-container {
+  padding: 10px;
+}
+
+.job-applications-card {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.applicants-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applicants-table th,
+.applicants-table td {
+  border: 1px solid;
+  padding: 8px;
+  text-align: left;
+}
