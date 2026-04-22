@@ -3,7 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getDatabase } from "firebase/database"; 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC4Ewg_vdodbdA5DKiwkN1mfzrygC5S9HM",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "majorproject-74f7e.firebaseapp.com",
   databaseURL: "https://majorproject-74f7e-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "majorproject-74f7e",

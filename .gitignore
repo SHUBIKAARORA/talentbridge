@@ -53,9 +53,10 @@ __pycache__/
 venv/
 env/
 .venv/
+.env
 
 # Python logs
-*.log
+*.loggit add talentbridge-frontend
 
 firebase-service-account.json
 
