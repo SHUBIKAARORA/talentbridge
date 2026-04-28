@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: talentbridge-backend
+    runtime: java
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
